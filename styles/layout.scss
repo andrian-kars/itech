@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+header, main, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+
+  @media (min-width: v.$bigger-mobile) {
+    width: 540px;
+  }
+
+  @media (min-width: v.$tablet) {
+    width: 720px;
+  }
+
+  @media (min-width: v.$desktop) {
+    width: 1170px;
+  }
+
+  @media (min-width: v.$bigger-desktop) {
+    width: 1320px;
+  }
+}
