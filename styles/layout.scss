@@ -6,6 +6,13 @@ header, main, footer {
   align-items: center;
 }
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+}
+
 .container {
   width: 100%;
 
@@ -24,4 +31,12 @@ header, main, footer {
   @media (min-width: v.$bigger-desktop) {
     width: 1320px;
   }
+}
+
+.navigation ul {
+  display: flex;
+  gap: var(--gap);
+
+  font: var(--smaller-font);
+  text-transform: uppercase;
 }

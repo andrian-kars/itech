@@ -5,5 +5,11 @@ $desktop: 1200px;
 $bigger-desktop: 1400px;
 
 :root {
+  // font
+  --smaller-font: 700 12px 'Inter', sans-serif;
+
+  // spacers
+  --gap: 15px;
+
   --transition: 0.3s;
 }

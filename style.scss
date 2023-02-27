@@ -1,7 +1,8 @@
 @use './styles/global';
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@700&display=swap');
 
 html {
-  background-color: aqua;
+  background-color: var(--white-color);
   color: var(--black-color)
 }
 
@@ -12,6 +13,12 @@ body, ul, li, p, h1, h2, h3, h4, h5, h6 {
 
 a {
   text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 li {
