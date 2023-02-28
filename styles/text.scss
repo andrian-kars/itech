@@ -2,4 +2,18 @@
   &_biggest {
     font: var(--biggest-font);
   }
+
+  &_gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      to right,
+      #501e9c 0%,
+      #8169f1 30%,
+      #8169f1 30%,
+      #a44cee 73%,
+      #ff847f 100%
+    );
+  }
 }

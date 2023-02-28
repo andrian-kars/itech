@@ -25,9 +25,46 @@ header {
   }
 
   .header__buttons {
+    position: relative;
     width: 208px;
     display: flex;
+    align-items: center;
     gap: var(--gap);
+  }
+
+  .header__lang {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    img {
+      height: 25px;
+      width: 25px;
+      padding-right: 10px;
+    }
+  }
+
+  .header__langs {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: var(--creame-color);
+    padding: 15px 0;
+    border-radius: 20px;
+
+    a {
+      width: calc(100% - 60px);
+      padding: 5px 30px;
+
+      &:hover {
+        background-color: var(--white-color);
+      }
+    }
   }
 }
 
