@@ -4,6 +4,13 @@
 html {
   background-color: var(--white-color);
   color: var(--black-color);
+  font: var(--font);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body,

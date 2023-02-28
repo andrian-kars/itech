@@ -6,7 +6,9 @@ $bigger-desktop: 1400px;
 
 :root {
   // font
-  --smaller-font: 700 12px 'Inter', sans-serif;
+  --smaller-font: 700 12px "Inter", sans-serif;
+  --font: 400 14px "Inter", sans-serif;
+  --biggest-font: 700 40px "Inter", sans-serif;
 
   // spacers
   --gap: 20px;

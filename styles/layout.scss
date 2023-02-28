@@ -1,6 +1,8 @@
-@use 'variables' as v;
+@use "variables" as v;
 
-header, main, footer {
+header,
+main,
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -25,19 +25,20 @@ header {
   }
 
   .header__buttons {
+    width: 208px;
     display: flex;
     gap: var(--gap);
   }
+}
 
-  .navigation ul {
-    display: flex;
-    gap: calc(var(--gap) * 2);
-    font: var(--smaller-font);
-    text-transform: uppercase;
-  }
+.navigation ul {
+  display: flex;
+  gap: calc(var(--gap) * 2);
+  font: var(--smaller-font);
+  text-transform: uppercase;
+}
 
-  .header__logo {
-    width: 150px;
-    height: 35px;
-  }
+.logo {
+  width: 150px;
+  height: 35px;
 }
