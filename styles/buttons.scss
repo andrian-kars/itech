@@ -1,5 +1,7 @@
+@use "variables" as v;
+
 .button {
-  --size: 40px;
+  --size: 30px;
 
   display: flex;
   justify-content: center;
@@ -46,5 +48,9 @@
   &_bigger {
     height: calc(var(--size) * 1.15);
     padding: 0 calc(var(--gap) * 1.5);
+  }
+
+  @media (min-width: v.$tablet) {
+    --size: 40px;
   }
 }

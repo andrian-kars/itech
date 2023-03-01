@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 footer {
   position: relative;
   margin-top: 169px;
@@ -48,11 +50,36 @@ footer {
   .footer__center {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     gap: var(--gap);
     padding: var(--gap) 0;
     border-bottom: 2px solid var(--grey-color);
+
+    @media (min-width: v.$tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .footer__navigation ul {
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      width: 80px;
+      align-self: start;
+    }
+
+    @media (min-width: v.$tablet) {
+      justify-content: space-around;
+    }
+
+    @media (min-width: v.$desktop) {
+      li {
+        width: auto;
+      }
+    }
   }
 
   .footer__language {
@@ -61,8 +88,17 @@ footer {
 
   .footer__buttons {
     display: flex;
+    flex-direction: column;
     gap: var(--gap);
     margin: calc(var(--gap) * 2) 0;
+
+    @media (min-width: v.$bigger-mobile) {
+      flex-direction: row;
+    }
+  }
+
+  .footer__button {
+    white-space: nowrap;
   }
 
   .footer__bottom {

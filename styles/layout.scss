@@ -9,14 +9,16 @@ footer {
 }
 
 .container {
-  width: 100%;
+  width: calc(100% - (var(--gap) * 2));
+  padding: var(--gap);
 
   @media (min-width: v.$bigger-mobile) {
-    width: 540px;
+    width: 510px;
   }
 
   @media (min-width: v.$tablet) {
     width: 720px;
+    padding: 0;
   }
 
   @media (min-width: v.$desktop) {
