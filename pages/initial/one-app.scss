@@ -1,0 +1,41 @@
+@use "styles/variables" as v;
+
+.one-app {
+  $double-gap: calc(var(--gap) * 2);
+
+  margin-top: $double-gap;
+
+  &__container {
+    display: flex;
+  }
+
+  &__right,
+  &__left {
+    flex: 1;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: $double-gap;
+
+    p {
+      align-self: flex-start;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: $double-gap;
+  }
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: v.$bigger-tablet) {
+    br {
+      display: block;
+    }
+  }
+}

@@ -17,14 +17,12 @@ $bigger-desktop: 1400px;
 
   --transition: 0.3s;
 
-  @media (min-width: $tablet) {
-    --smallest-font: 400 11px "Inter", sans-serif;
-    --smaller-font: 700 12px "Inter", sans-serif;
-    --font: 400 14px "Inter", sans-serif;
-    --biggest-font: 700 40px "Inter", sans-serif;
-  }
-
   @media (min-width: $bigger-tablet) {
     --gap: 20px;
+
+    --smallest-font: 400 11px "Inter", sans-serif;
+    --smaller-font: 700 12px "Inter", sans-serif;
+    --font: 400 15px "Inter", sans-serif;
+    --biggest-font: 700 52px "Inter", sans-serif;
   }
 }
