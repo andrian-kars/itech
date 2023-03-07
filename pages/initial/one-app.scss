@@ -3,39 +3,132 @@
 .one-app {
   $double-gap: calc(var(--gap) * 2);
 
+  position: relative;
   margin-top: $double-gap;
+
+  &__animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("assets/images/initial/one-app-bubble.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    overflow: clip;
+
+    animation: rotate-center 100s linear infinite both;
+
+    @keyframes rotate-center {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
 
   &__container {
     display: flex;
+    flex-direction: column;
+
+    @media (min-width: v.$bigger-tablet) {
+      flex-direction: row;
+    }
   }
 
   &__right,
   &__left {
-    flex: 1;
+    @media (min-width: v.$bigger-tablet) {
+      flex: 1;
+    }
   }
 
   &__left {
     display: flex;
     flex-direction: column;
     gap: $double-gap;
+    margin-bottom: $double-gap;
 
     p {
       align-self: flex-start;
+    }
+
+    @media (min-width: v.$bigger-tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__right {
+    height: 390px;
+    background-image: url("assets/images/initial/one-app-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: v.$bigger-mobile) {
+      height: 500px;
+    }
+
+    @media (min-width: v.$tablet) {
+      height: 660px;
     }
   }
 
   &__buttons {
     display: flex;
+    align-items: center;
     gap: $double-gap;
+  }
+
+  &__play {
+    position: relative;
+
+    span {
+      left: 20px;
+      padding: 0 20px;
+      position: absolute;
+
+      @media (min-width: v.$bigger-tablet) {
+        left: 30px;
+      }
+    }
   }
 
   br {
     display: none;
+
+    @media (min-width: v.$bigger-tablet) {
+      display: block;
+    }
   }
 
-  @media (min-width: v.$bigger-tablet) {
-    br {
-      display: block;
+  &__infos {
+    display: flex;
+    gap: $double-gap;
+    margin-top: $double-gap;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+      background-color: var(--creame-color);
+      border-radius: 50%;
+
+      svg {
+        fill: var(--violett-color);
+      }
     }
   }
 }
