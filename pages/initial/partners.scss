@@ -1,0 +1,29 @@
+@use "styles/variables" as v;
+
+.partners {
+  width: 100%;
+  height: 600px;
+  position: relative;
+
+  &__wave {
+    z-index: 69;
+    top: -200px;
+
+    @media (min-width: v.$bigger-mobile) {
+      top: -240px;
+    }
+
+    @media (min-width: v.$bigger-tablet) {
+      top: -180px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: v.$bigger-tablet) {
+      flex-direction: row;
+    }
+  }
+}
