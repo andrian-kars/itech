@@ -18,6 +18,11 @@ $bigger-desktop: 1400px;
 
   --transition: 0.3s;
 
+  // z-indexes
+  --almost-nice-index: 68;
+  --nice-index: 69;
+  --bigger-than-nice-index: 70;
+
   @media (min-width: $bigger-tablet) {
     --gap: 20px;
 

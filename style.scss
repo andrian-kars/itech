@@ -46,3 +46,12 @@ button {
 li {
   list-style: none;
 }
+
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

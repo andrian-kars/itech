@@ -1,4 +1,8 @@
 .text {
+  &_bold {
+    font-weight: 700;
+  }
+
   &_biggest {
     font: var(--biggest-font);
   }

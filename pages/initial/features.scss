@@ -8,15 +8,56 @@
   background-color: var(--creame-color);
   padding: $double-gap 0;
 
+  &__circle {
+    position: absolute;
+    background-image: url("assets/images/initial/features_circle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 25%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 50%;
+    margin: 0 auto;
+    z-index: var(--almost-nice-index);
+
+    animation: rotate-center 100s linear infinite both;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: $double-gap;
+    margin: $double-gap auto;
+    z-index: var(--nice-index);
   }
 
-  p {
-    // width: auto;
-    // text-align: center;
+  &__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: $double-gap;
+
+    @media (min-width: v.$bigger-tablet) {
+      justify-content: space-around;
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    @media (min-width: v.$bigger-tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    p {
+      width: 140px;
+      padding-top: var(--gap);
+      text-align: center;
+    }
   }
 
   &__wave {
@@ -28,5 +69,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: var(--nice-index);
   }
 }
