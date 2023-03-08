@@ -1,9 +1,11 @@
 @use "styles/variables" as v;
 
 .partners {
+  $double-gap: calc(var(--gap) * 2);
+
   width: 100%;
-  height: 600px;
   position: relative;
+  background-color: var(--creame-color);
 
   &__wave {
     z-index: 69;
@@ -21,9 +23,41 @@
   &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: $double-gap;
+    border-bottom: 2px solid var(--grey-color);
+  }
 
-    @media (min-width: v.$bigger-tablet) {
-      flex-direction: row;
+  &__heading {
+    z-index: 70;
+    margin-bottom: $double-gap;
+  }
+
+  &__links {
+    margin: $double-gap 0;
+    width: 100%;
+    display: flex;
+    z-index: 70;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--gap);
+  }
+
+  &__link {
+    img {
+      filter: grayscale(1);
+      opacity: 0.6;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      img {
+        filter: grayscale(0);
+        opacity: 1;
+      }
     }
   }
 }

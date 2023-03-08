@@ -3,6 +3,10 @@
     font: var(--biggest-font);
   }
 
+  &_bigger {
+    font: var(--bigger-font);
+  }
+
   &_gradient {
     background-clip: text;
     -webkit-background-clip: text;
@@ -21,6 +25,10 @@
     color: #b5a6f5;
   }
 
+  &_violett {
+    color: var(--violett-color);
+  }
+
   &_emoji {
     font-size: 20px;
   }
@@ -30,5 +38,10 @@
     color: var(--violett-color);
     font-size: 12px;
     padding: 5px 10px;
+    border-radius: 3px;
+
+    &_white {
+      background-color: var(--white-color);
+    }
   }
 }
