@@ -1,0 +1,32 @@
+@use "styles/variables" as v;
+
+.notero {
+  $double-gap: calc(var(--gap) * 2);
+
+  display: flex;
+  justify-content: center;
+  padding: 150px 0;
+
+  &__container {
+    display: flex;
+  }
+
+  &__left,
+  &__right {
+    flex: 1;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: $double-gap;
+
+    p {
+      align-self: flex-start;
+    }
+  }
+
+  &__description {
+    line-height: 30px;
+  }
+}
