@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use "variables" as var;
 
 .button {
   --size: 30px;
@@ -50,7 +50,7 @@
     padding: 0 calc(var(--gap) * 1.5);
   }
 
-  @media (min-width: v.$bigger-tablet) {
+  @media (min-width: var.$bigger-tablet) {
     --size: 40px;
   }
 

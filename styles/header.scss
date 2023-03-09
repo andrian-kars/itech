@@ -1,12 +1,10 @@
-@use "variables" as v;
+@use "variables" as var;
+@use "styles/mixins" as mixins;
 
 .top-banner {
   width: 100%;
   min-height: 45px;
-  background-image: url("assets/images/top_nav_background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include mixins.background-image("assets/images/top_nav_background.png");
   margin-bottom: -30px;
   padding-bottom: 30px;
   font: var(--smallest-font);
@@ -45,7 +43,7 @@ header {
     flex-direction: column;
     gap: var(--gap);
 
-    @media (min-width: v.$tablet) {
+    @media (min-width: var.$tablet) {
       flex-direction: row;
     }
   }
@@ -82,7 +80,7 @@ header {
     padding: calc(var(--gap) * 2) var(--gap);
     border-bottom: 2px solid var(--grey-color);
 
-    @media (min-width: v.$tablet) {
+    @media (min-width: var.$tablet) {
       border: none;
       align-items: center;
       padding: 0;
@@ -91,7 +89,7 @@ header {
   }
 
   .header__mobile-trigger {
-    @media (min-width: v.$tablet) {
+    @media (min-width: var.$tablet) {
       display: none;
     }
   }
@@ -122,17 +120,17 @@ header {
   .header__svg_tablet {
     display: none;
 
-    @media (min-width: v.$tablet) {
+    @media (min-width: var.$tablet) {
       display: inline;
     }
 
-    @media (min-width: v.$desktop) {
+    @media (min-width: var.$desktop) {
       display: none;
     }
   }
 
   ul .header__link_tablet {
-    @media (min-width: v.$tablet) {
+    @media (min-width: var.$tablet) {
       --top: 27px;
 
       position: absolute;
@@ -160,7 +158,7 @@ header {
       }
     }
 
-    @media (min-width: v.$desktop) {
+    @media (min-width: var.$desktop) {
       position: static;
       width: auto;
       height: auto;
@@ -186,7 +184,7 @@ header {
       }
     }
 
-    @media (min-width: v.$tablet) {
+    @media (min-width: var.$tablet) {
       right: -15px;
     }
   }
@@ -204,7 +202,7 @@ header {
     justify-content: flex-start;
   }
 
-  @media (min-width: v.$tablet) {
+  @media (min-width: var.$tablet) {
     position: relative;
 
     ul {

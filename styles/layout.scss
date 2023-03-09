@@ -12,20 +12,20 @@ footer {
   width: calc(100% - (var(--gap) * 2));
   padding: var(--gap);
 
-  @media (min-width: v.$bigger-mobile) {
+  @media (min-width: var.$bigger-mobile) {
     width: 510px;
   }
 
-  @media (min-width: v.$tablet) {
+  @media (min-width: var.$tablet) {
     width: 720px;
     padding: 0;
   }
 
-  @media (min-width: v.$desktop) {
+  @media (min-width: var.$desktop) {
     width: 1170px;
   }
 
-  @media (min-width: v.$bigger-desktop) {
+  @media (min-width: var.$bigger-desktop) {
     width: 1320px;
   }
 }

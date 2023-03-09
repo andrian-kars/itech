@@ -1,4 +1,5 @@
-@use "variables" as v;
+@use "variables" as var;
+@use "styles/mixins" as mixins;
 
 footer {
   position: relative;
@@ -29,7 +30,7 @@ footer {
     padding: var(--gap) 0;
     border-bottom: 2px solid var(--grey-color);
 
-    @media (min-width: v.$tablet) {
+    @media (min-width: var.$tablet) {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -45,11 +46,11 @@ footer {
       align-self: start;
     }
 
-    @media (min-width: v.$tablet) {
+    @media (min-width: var.$tablet) {
       justify-content: space-around;
     }
 
-    @media (min-width: v.$desktop) {
+    @media (min-width: var.$desktop) {
       li {
         width: auto;
       }
@@ -62,7 +63,7 @@ footer {
     gap: var(--gap);
     margin: calc(var(--gap) * 2) 0;
 
-    @media (min-width: v.$bigger-mobile) {
+    @media (min-width: var.$bigger-mobile) {
       flex-direction: row;
     }
   }
@@ -84,10 +85,7 @@ footer {
   left: -3px;
   right: -3px;
   height: 269px;
-  background-image: url("assets/images/footer_wave.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include mixins.background-image("assets/images/footer_wave.png");
   z-index: -1;
 
   animation: wave 2s ease-in-out infinite alternate both;

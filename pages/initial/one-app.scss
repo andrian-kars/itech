@@ -1,4 +1,5 @@
-@use "styles/variables" as v;
+@use "styles/variables" as var;
+@use "mixins" as localMixins;
 
 .one-app {
   $double-gap: calc(var(--gap) * 2);
@@ -7,33 +8,23 @@
   margin-top: $double-gap;
 
   &__animation {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-image: url("assets/images/initial/one-app-bubble.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-    overflow: clip;
-
-    animation: rotate-center 100s linear infinite both;
+    @include localMixins.rotate-center(
+      $image: "assets/images/initial/one-app-bubble.png"
+    );
   }
 
   &__container {
     display: flex;
     flex-direction: column;
 
-    @media (min-width: v.$bigger-tablet) {
+    @media (min-width: var.$bigger-tablet) {
       flex-direction: row;
     }
   }
 
   &__right,
   &__left {
-    @media (min-width: v.$bigger-tablet) {
+    @media (min-width: var.$bigger-tablet) {
       flex: 1;
     }
   }
@@ -48,25 +39,15 @@
       align-self: flex-start;
     }
 
-    @media (min-width: v.$bigger-tablet) {
+    @media (min-width: var.$bigger-tablet) {
       margin-bottom: 0;
     }
   }
 
   &__right {
-    height: 390px;
-    background-image: url("assets/images/initial/one-app-background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (min-width: v.$bigger-mobile) {
-      height: 500px;
-    }
-
-    @media (min-width: v.$tablet) {
-      height: 660px;
-    }
+    @include localMixins.half-container-image(
+      "assets/images/initial/one-app-background.png"
+    );
   }
 
   &__buttons {
@@ -83,7 +64,7 @@
       padding: 0 20px;
       position: absolute;
 
-      @media (min-width: v.$bigger-tablet) {
+      @media (min-width: var.$bigger-tablet) {
         left: 30px;
       }
     }
@@ -92,7 +73,7 @@
   br {
     display: none;
 
-    @media (min-width: v.$bigger-tablet) {
+    @media (min-width: var.$bigger-tablet) {
       display: block;
     }
   }

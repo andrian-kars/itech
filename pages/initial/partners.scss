@@ -1,4 +1,4 @@
-@use "styles/variables" as v;
+@use "styles/variables" as var;
 
 .partners {
   $double-gap: calc(var(--gap) * 2);
@@ -11,11 +11,11 @@
   &__wave {
     top: -200px;
 
-    @media (min-width: v.$bigger-mobile) {
+    @media (min-width: var.$bigger-mobile) {
       top: -240px;
     }
 
-    @media (min-width: v.$bigger-tablet) {
+    @media (min-width: var.$bigger-tablet) {
       top: -180px;
     }
   }
