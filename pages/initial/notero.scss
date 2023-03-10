@@ -22,12 +22,16 @@
     left: 0;
     right: 50%;
     bottom: 0;
-    @include mixins.background-image("assets/images/initial/notero-web.png");
+    @include mixins.background-image(
+      $image: "assets/images/initial/notero-web.png",
+      $size: contain
+    );
+    z-index: -1;
   }
 
   &__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: var(--gap);
 
     @media (min-width: var.$desktop) {
@@ -45,13 +49,6 @@
   &__left {
     @include localMixins.half-container-image(
       "assets/images/initial/notero-ipad.png"
-    );
-  }
-
-  &__animation {
-    @include localMixins.rotate-center(
-      15%,
-      "assets/images/initial/notero-bubbles.png"
     );
   }
 
@@ -101,4 +98,11 @@
       align-self: center;
     }
   }
+}
+
+.notero__animation {
+  @include localMixins.rotate-center(
+    15%,
+    "assets/images/initial/notero-bubbles.png"
+  );
 }

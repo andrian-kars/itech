@@ -7,6 +7,14 @@
     font: var(--biggest-font);
   }
 
+  &_smallest {
+    font: var(--smallest-font);
+  }
+
+  &_smaller {
+    font: var(--smaller-font);
+  }
+
   &_bigger {
     font: var(--bigger-font);
   }

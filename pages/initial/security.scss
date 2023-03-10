@@ -1,0 +1,50 @@
+@use "styles/variables" as var;
+@use "styles/mixins" as mixins;
+@use "mixins" as localMixins;
+
+.security {
+  $double-gap: calc(var(--gap) * 2);
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    @media (min-width: var.$desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__left,
+  &__right {
+    @media (min-width: var.$desktop) {
+      flex: 1;
+    }
+  }
+
+  &__right {
+    @include localMixins.half-container-image(
+      "assets/images/initial/security-mobiles.png"
+    );
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: $double-gap;
+
+    p,
+    a {
+      align-self: flex-start;
+    }
+  }
+
+  &__description {
+    line-height: 30px;
+  }
+}

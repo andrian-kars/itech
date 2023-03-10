@@ -1,11 +1,14 @@
 @use "variables" as var;
 
-.button {
-  --size: 30px;
-
+.button,
+.button-svg {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button {
+  --size: 30px;
 
   padding: 0 var(--gap);
   height: var(--size);
@@ -63,5 +66,47 @@
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+  }
+}
+
+.button-svg {
+  --size: 45px;
+  --local-gap: 7px;
+
+  padding: 0 calc(var(--gap) * 1.2);
+  height: var(--size);
+  border-radius: var(--size);
+
+  background-color: var(--creame-color);
+
+  &__left {
+    height: 50%;
+    border-right: 1px solid var(--grey-color);
+
+    img {
+      padding-right: var(--local-gap);
+      height: 23px;
+    }
+  }
+
+  &__right {
+    padding-left: var(--local-gap);
+  }
+
+  p {
+    line-height: 15px;
+  }
+
+  @media (min-width: var.$bigger-tablet) {
+    --size: 60px;
+    --local-gap: 10px;
+
+    img {
+      height: 28px;
+    }
+
+    p {
+      line-height: 18px;
+    }
   }
 }
