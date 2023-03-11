@@ -110,3 +110,44 @@
     }
   }
 }
+
+.button-dropdown {
+  width: 280px;
+  padding: var(--gap);
+  border-radius: 6px;
+
+  @media (min-width: var.$bigger-mobile) {
+    width: 360px;
+  }
+
+  @media (min-width: var.$bigger-tablet) {
+    width: 469px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+  }
+
+  &__bottom {
+    display: none;
+  }
+
+  &_active {
+    background-color: var(--creame-color);
+    color: var(--violett-color);
+
+    .button-dropdown__bottom {
+      display: block;
+      margin-top: var(--gap);
+      text-align: left;
+      color: var(--black-color);
+    }
+
+    svg {
+      transform: scaleY(-1);
+      fill: var(--violett-color);
+    }
+  }
+}

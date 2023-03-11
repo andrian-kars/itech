@@ -1,4 +1,6 @@
 .text {
+  font: var(--font);
+
   &_bold {
     font-weight: 700;
   }
