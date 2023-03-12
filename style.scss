@@ -47,11 +47,25 @@ li {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 @keyframes rotate-center {
   0% {
     transform: rotate(0);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
   }
 }
