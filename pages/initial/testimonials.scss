@@ -1,0 +1,72 @@
+@use "styles/variables" as var;
+@use "styles/mixins" as mixins;
+@use "mixins" as localMixins;
+
+.testimonials {
+  $double-gap: calc(var(--gap) * 2);
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 69px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: $double-gap;
+
+    @media (min-width: var.$desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__left,
+  &__right {
+    @media (min-width: var.$desktop) {
+      flex: 1;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: $double-gap;
+    align-items: flex-start;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: var(--gap);
+  }
+
+  &__right {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      bottom: -10%;
+      right: -10%;
+      z-index: -1;
+
+      @include localMixins.half-container-image(
+        "assets/images/initial/testimonials-globe.svg"
+      );
+
+      animation: rotate-center 100s linear infinite both;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    .card:nth-child(2) {
+      align-self: flex-end;
+    }
+  }
+}

@@ -56,20 +56,6 @@
     gap: $double-gap;
   }
 
-  &__play {
-    position: relative;
-
-    span {
-      left: 20px;
-      padding: 0 20px;
-      position: absolute;
-
-      @media (min-width: var.$bigger-tablet) {
-        left: 30px;
-      }
-    }
-  }
-
   br {
     display: none;
 
@@ -101,6 +87,20 @@
       svg {
         fill: var(--violett-color);
       }
+    }
+  }
+}
+
+.one-app__play {
+  position: relative;
+
+  span {
+    left: 20px;
+    padding: 0 20px;
+    position: absolute;
+
+    @media (min-width: var.$bigger-tablet) {
+      left: 30px;
     }
   }
 }

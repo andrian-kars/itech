@@ -1,0 +1,41 @@
+@use "styles/variables" as var;
+
+.card {
+  $double-gap: calc(var(--gap) * 2);
+
+  display: flex;
+  gap: $double-gap;
+  width: 260px;
+  height: 100px;
+  padding: var(--gap);
+  border-radius: 15px;
+  background-color: var(--white-color);
+  box-shadow: -4.104px 11.276px 38px 0px rgb(45 42 61 / 10%);
+
+  @media (min-width: var.$bigger-mobile) {
+    width: 460px;
+  }
+
+  @media (min-width: var.$bigger-tablet) {
+    height: 134px;
+  }
+
+  svg {
+    fill: var(--yellow-color);
+  }
+
+  &__left {
+    display: none;
+
+    @media (min-width: var.$bigger-mobile) {
+      display: block;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+  }
+}
