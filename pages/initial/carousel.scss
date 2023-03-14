@@ -4,11 +4,10 @@
 .carousel {
   position: relative;
   width: 100%;
-  height: 400px;
   margin-top: 75px;
   background-color: var(--creame-color);
 
-  .features__wave {
+  &__wave {
     top: -12px;
     bottom: auto;
     transform: scaleY(-1);
@@ -16,5 +15,30 @@
 
   @media (min-width: var.$bigger-tablet) {
     margin-top: 150px;
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: 25px;
+
+    @media (min-width: var.$bigger-tablet) {
+      height: 500px;
+      margin-top: 60px;
+    }
+  }
+
+  &__hand {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+
+    @include mixins.background-image(
+      $image: "assets/images/initial/carousel-hand.png",
+      $size: contain
+    );
   }
 }
