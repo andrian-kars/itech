@@ -20,10 +20,6 @@
     height: 134px;
   }
 
-  svg {
-    fill: var(--yellow-color);
-  }
-
   &__left {
     display: none;
 
@@ -37,5 +33,11 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 5px;
+  }
+
+  &__stars {
+    svg {
+      fill: var(--yellow-color);
+    }
   }
 }
