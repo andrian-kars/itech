@@ -74,30 +74,6 @@
       }
     }
   }
-
-  &__benefit {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    gap: 10px;
-
-    div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 8px;
-      background-color: var(--creame-color);
-      border-radius: 50%;
-    }
-
-    svg {
-      fill: var(--violett-color);
-    }
-
-    p {
-      align-self: center;
-    }
-  }
 }
 
 .notero__animation {
@@ -105,4 +81,28 @@
     15%,
     "assets/images/initial/notero-bubbles.png"
   );
+}
+
+.notero__benefit {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: var(--creame-color);
+    border-radius: 50%;
+  }
+
+  svg {
+    fill: var(--violett-color);
+  }
+
+  p {
+    align-self: center;
+  }
 }
