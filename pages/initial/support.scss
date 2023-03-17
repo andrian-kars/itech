@@ -1,0 +1,28 @@
+@use "styles/variables" as var;
+
+.support {
+  margin-top: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: var.$bigger-tablet) {
+      flex-direction: row;
+      gap: var(--gap);
+    }
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+}
