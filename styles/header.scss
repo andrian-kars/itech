@@ -29,6 +29,16 @@
   }
 }
 
+.header_fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-radius: 0;
+
+  z-index: 999;
+}
+
 header {
   --top-radius: 30px;
 
