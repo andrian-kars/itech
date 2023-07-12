@@ -1,0 +1,89 @@
+
+
+
+/* --------------- search styles --------------- */
+.domain-search.style-9{
+    .domain-choose{
+        display: flex;
+        .butn{
+            flex-shrink: 0;
+            margin-inline-start: 10px;
+            padding: 20px 40px;
+        }
+        .form-group{
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 100%;
+            .icon{
+                margin-right: 10px;
+                flex-shrink: 0;
+            }
+            .form-select{
+                width: max-content;
+                border: 0;
+                flex-shrink: 0;
+                font-weight: bold;
+                color: var(--color-darkBlue2);
+            }
+            input{
+                width: 100%;
+                border: 0;
+            }
+        }
+    }
+
+    .domain-names{
+        margin-top: 40px;
+        .item{
+            margin-top: 10px;
+            &.dom-tech{
+                span{
+                    color: #6c41ff;
+                }
+            }
+            &.dom-net{
+                span{
+                    color: #ff7342;
+                }
+            }
+            &.dom-co{
+                span{
+                    color: #cc41ff;
+                }
+            }
+            &.dom-com{
+                span{
+                    color: #ff28ac;
+                }
+            }
+            &.dom-info{
+                span{
+                    color: #89a829;
+                }
+            }
+            &.dom-org{
+                span{
+                    color: #a342ed;
+                }
+            }
+        }
+        p{
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        h5{
+            text-align: center;
+            border-top: 1px solid #9993;
+            padding-top: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            color: var(--color-darkBlue2);
+            font-weight: bold;
+        }
+    }
+}
+

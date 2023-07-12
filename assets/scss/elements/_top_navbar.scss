@@ -1,0 +1,114 @@
+
+
+.top-navbar{
+    z-index: 9999;
+}
+/* --------------- top navbar styles --------------- */
+
+.top-navbar.style-1 {
+  background: var(--color-main-grad);
+  position: relative;
+  z-index: 9999;
+  .top-links {
+      .text {
+          font-size: 11px;
+          strong {
+              margin: 0 10px;
+          }
+          .fa-bullhorn {
+              background-color: #002ec1;
+              padding: 15px;
+          }
+      }
+  }
+  .r-side {
+      display: flex;
+      justify-content: flex-end;
+      .socail-icons {
+          border-right: 1px solid #fff4;
+          padding-right: 10px;
+          margin-right: 14px;
+          a {
+              color: #fff;
+              margin: 0 5px;
+              font-size: 12px;
+          }
+      }
+      .dropdown {
+          color: #fff;
+          font-size: 11px;
+          img {
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              object-fit: cover;
+          }
+      }
+  }
+}
+
+/* --------------- top navbar style-4 --------------- */
+.top-navbar.style-4{
+    background-image: url(../img/top_nav_s4.png);
+    background-size: cover;
+    background-position: top;
+    padding: 10px 15px 50px;
+    text-align: center;
+}
+
+/* --------------- top navbar style-5 --------------- */
+.top-navbar.style-5{
+    padding: 10px 15px;
+    text-align: center;
+    background-color: var(--color-blue5);
+}
+
+
+/* --------------- top navbar style-7 --------------- */
+.top-navbar.style-7{
+    padding: 15px 0;
+    border-bottom: 1px solid #9993;
+    position: relative;
+    z-index: 9991;
+}
+
+
+/* --------------- top navbar style 9 --------------- */
+.top-navbar.style-9{
+    color: #fff;
+    background-color: #172b86;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* --------------- top navbar style 11 --------------- */
+.top-navbar.style-11{
+    position: relative;
+    z-index: 9999;
+
+    .top-nav-side{
+        display: flex;
+        justify-content: flex-end;
+
+        .social-links{
+            display: flex;
+            color: #fff;
+            a{
+                color: #999;
+                margin-inline-start: 15px;
+                &:hover{
+                    color: var(--color-green);
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------- top navbar style 9 --------------- */
+.top-navbar.style-15{
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    font-size: 13px;
+}

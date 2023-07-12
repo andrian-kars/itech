@@ -1,0 +1,153 @@
+
+
+
+/* --------------- services page styles --------------- */
+.about-page{
+    header.style-5 {
+        position: relative;
+        .info h1{
+            font-size: 55px;
+        }
+
+        .main-vid{
+            position: relative;
+            height: 570px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 10px solid #ffffff01;
+            margin-top: 150px;
+            box-shadow: 0px 30px 40px 0px rgba(109, 121, 141, 0.3);
+            img{
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .play-icon{
+                position: absolute;
+                left: calc(50% - 50px);
+                top: calc(50% - 50px);
+                width: 100px;
+                height: 100px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: #fff;
+                font-size: 25px;
+                background-color: var(--color-blue5);
+                box-shadow:0px 5px 0px 0px var(--color-blue4);
+                filter: drop-shadow(0 13px 20px #0008);
+                animation: scale_up_down 1s ease-in-out infinite alternate both;
+            }
+        }
+
+        .hand-mega{
+            position: absolute;
+            width: 17%;
+            top: 9%;
+            left: 0;
+            object-fit: contain;
+            object-position: left;
+            z-index: 2;
+        }
+    
+        .head6-rating{
+            position: absolute;
+            width: 18%;
+            top: 27%;    
+            left: 15%;
+            object-fit: contain;
+            z-index: 2;
+        }
+    
+        .head6-charts{
+            position: absolute;
+            width: 14%;
+            top: 7%;
+            right: 10%;
+            object-fit: contain;
+            z-index: 2;
+        }
+    
+        .head6-rocket{
+            position: absolute;
+            width: 20%;
+            top: 25%;
+            right: -30px;
+            z-index: 2;
+        }
+    }
+
+    .contact{
+        .content{
+            border-top: 10px solid var(--color-blue5);
+        }
+    }
+
+    .contact.style-6 .form-group .form-control:focus, .contact.style-6 .form-group .form-select:focus{
+        border-color: var(--color-blue5);
+    }
+}
+
+.culture.style-5{
+    .culture-card{
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        max-height: 500px;
+        &::after{
+            position: absolute;
+            content: "";
+            height: 50px;
+            width: 3px;
+            background-color: #fff;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            z-index: 10;
+            border-radius: 3px;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 50px;
+            background-color: #fff;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50% , -50%);
+            z-index: 10;
+            border-radius: 3px;
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+        }
+        .overlay{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0;
+        }
+
+        &:hover{
+            .overlay{
+                opacity: 0.3;
+            }
+            &::after{
+                top: 50%;
+                opacity: 1;
+            }
+            &::before{
+                left: 50%;
+                opacity: 1;
+            }
+        }
+    }
+}
+

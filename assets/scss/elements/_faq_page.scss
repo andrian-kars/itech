@@ -1,0 +1,148 @@
+
+
+
+/* --------------- faq-page style-5 --------------- */
+.faq-page.style-5{
+    .faq-tabs{
+        margin-bottom: 80px;
+        .nav{
+            margin: 0 -15px;
+            .nav-item{
+                width: 25%;
+                padding: 0 15px;
+                .nav-card{
+                    display: block;
+                    background-color: #fff;
+                    border: 1px solid #9992;
+                    border-radius: 10px;
+                    padding: 50px 15px;
+                    text-align: center;
+                    width: 100%;
+                    box-shadow: 0px 16px 32px 0px #0000000a;
+                    .icon{
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 auto 30px;
+                    }
+                    h5{
+                        font-size: 18px;
+                        text-transform: capitalize;
+                    }
+                    p{
+                        color: #999;
+                    }
+                    &.active{
+                        border-color: var(--color-blue5);
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq-body{
+        .faq-category{
+            padding: 50px;
+            background-color: var(--color-blue5);
+            border-radius: 5px;
+            color: #fff;
+            position: sticky;
+            top: 100px;
+            h5{
+                margin-bottom: 20px;
+            }
+            li{
+                margin: 10px 0;
+                display: flex;
+                justify-content: space-between;
+                text-transform: capitalize;
+                a{
+                    position: relative;
+                    font-weight: 500;
+                    color: #fff;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        top: 50%;
+                        height: 1px;
+                        width: 0;
+                        background-color: #fff;
+                        opacity: 0;
+                        transition: all 0.3s ease;
+                    }
+                    &:hover,
+                    &.active{
+                        color: #fff;
+                        padding-left: 35px;
+                        &::before{
+                            width: 20px;
+                            opacity: 1;
+                        }
+                    }
+                }
+                span{
+                    font-weight: 300;
+                    opacity: 0.5;
+                }
+            }
+        }
+        .faq-questions{
+            .sec-title{
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 30px;
+                span{
+                    color: #999;
+                }
+            }
+
+            .accordion{
+                padding-top: 80px;
+            }
+
+            .accordion-item{
+                border: 0;
+                border-radius: 0;
+                margin-bottom: 20px;
+                .accordion-button{
+                    background-color: #f4f6f9;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    color: #000;
+                    box-shadow: none;
+                    padding: 12px 20px;
+                }
+                .accordion-button:not(.collapsed){
+                    background-color: var(--color-blue5);
+                    color: #fff;
+                    &::after{
+                        content: "\f068";
+                    }
+                }
+
+                .accordion-body{
+                    font-size: 16px;
+                    color: #666;
+                    font-weight: 500;
+                }
+
+                .accordion-button::after{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    background: #fff;
+                    border-radius: 50%;
+                    color: #000;
+                    content: "\f067";
+                    font-weight: 900;
+                    font-family: "Font Awesome 5 pro";
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

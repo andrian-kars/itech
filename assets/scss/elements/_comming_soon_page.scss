@@ -1,0 +1,106 @@
+
+
+
+/* --------------- faq-page style-5 --------------- */
+.comming-soon-page.style-5{
+    position: relative;
+    color: #000;
+    .comming-soon{
+        background-image: url(../img/comming_back1.png);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 100px 0;
+        .content{
+            padding-top: 125px;
+            text-align: center;
+
+            .info{
+                h3{
+                    font-size: 40px;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size: 16px;
+                    color: #666;
+                }
+
+                .subscribe-form{
+                    margin-top: 50px;
+                    .form-group{
+                        display: flex;
+                        align-items: center;
+                        border-radius: 30px;
+                        border: 1px solid #9993;
+                        background-color: #fff;
+                        box-shadow: 0 0 30px #0001;
+                        .icon{
+                            padding: 0 10px 0 30px;
+                            flex-shrink: 0;
+                        }
+                        .form-control{
+                            border: 0;
+                        }
+                    }
+                }
+
+                .timing{
+                    display: flex;
+                    margin-bottom: 70px;
+                    .item{
+                        padding: 20px 0;
+                        margin: 10px;
+                        width: 100%;
+                        background-color: #fff;
+                        border-radius: 5px;
+                        border-bottom: 3px solid var(--color-blue5);
+
+                        h2{
+                            font-size: calc(2vw + 20px);
+                        }
+
+                        small{
+                            font-size: 13px;
+                            color: #999;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .comming_man_shape{
+        position: absolute;
+        left: 5%;
+        top: calc(50% - 250px);
+        width: 20%;
+        height: 500px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .comming_chat_shape{
+        position: absolute;
+        right: 10%;
+        top: calc(40% - 50px);
+        width: 15%;
+        height: 110px;
+        object-fit: contain;
+        object-position: center;
+        animation-delay: -1.3s;
+    }
+
+    .comming_light_shape{
+        position: absolute;
+        right: 30%;
+        bottom: 50px;
+        width: 5%;
+        height: 110px;
+        object-fit: contain;
+        object-position: center;
+        animation-delay: -0.7s;
+    }
+}

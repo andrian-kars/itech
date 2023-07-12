@@ -1,0 +1,39 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="149.562" height="35" viewBox="0 0 149.562 35">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 12px;
+        fill: #666;
+        text-transform: uppercase;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Inter;
+      }
+
+      .cls-2 {
+        font-size: 28px;
+        fill: #fefefe;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #0c3df4;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="289.438" y="6706.66" width="33.093" height="33.12" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="289.438" y="6706.66" width="33.093" height="33.12" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzMuMDkzIiBoZWlnaHQ9IjMzLjEyIiB2aWV3Qm94PSIwIDAgMzMuMDkzIDMzLjEyIj4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeTE9IjE2LjU2IiB4Mj0iMzMuMDkzIiB5Mj0iMTYuNTYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMGMzZGY0Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAyYjVmZiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMzMuMDkzIiBoZWlnaHQ9IjMzLjEyIi8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="text">
+    <text id="Tech_IT_Solutions" data-name="Tech &amp; IT Solutions" class="cls-1" transform="translate(48.235 32.977) scale(0.77 0.77)">Tech &amp; IT Solutions</text>
+    <text id="Iteck" class="cls-2" transform="translate(48.235 16.041) scale(0.77 0.77)">Iteck</text>
+  </g>
+  <g id="Symbol">
+    <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-3" d="M300.475,6728.74H289.442V6716.6s1.2-9.93,11.4-9.93h10.666v11.03H300.475v11.04Zm11.034-11.04h11.034v12.14s-1.2,9.93-11.4,9.93H300.475v-11.03h11.034V6717.7Z" transform="translate(-289.438 -6705)"/>
+  </g>
+</svg>

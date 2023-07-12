@@ -1,0 +1,89 @@
+
+
+
+/* --------------- timeline styles --------------- */
+.timeline.style-15{
+    padding: 100px 0 130px;
+    .timeline-cards{
+        position: relative;
+        .progress{
+            height: 5px;
+            border-radius: 10px;
+            background-color: #fff1;
+            .progress-bar{
+                background-color: var(--color-red2);
+                background: linear-gradient(to right , #ee1552 , #435eba);
+                border-radius: 10px;
+                width: 1%;
+                transition: all 4s linear;
+                &.animated{
+                    width: 100%;
+                }
+            }
+        }
+        .timeline-card{
+            background-color: #120431;
+            border-radius: 100px 100px 50px 5px;
+            width: max-content;
+            padding: 20px;
+            text-align: center;
+            margin: 30px auto 55px;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                left: -10px;
+                bottom: -68px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                // background-color: #251b3b;
+                background-color: #ee155255;
+                box-shadow: 0 5px 10px #ee155244;
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                left: -4px;
+                bottom: -62px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+            &.animated{
+                &::after{
+                    // background-color: #ee155255;
+                    // box-shadow: 0 5px 10px #ee155244;
+                }
+            }
+            .icon{
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                background-color: var(--color-red2);
+                margin-bottom: 40px;
+            }
+
+            .info{
+                max-width: 140px;
+                padding-bottom: 10px;
+                h6{
+                    font-style: 16px;
+                }
+            }
+
+            .year{
+                position: absolute;
+                left: -10px;
+                bottom: -100px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+

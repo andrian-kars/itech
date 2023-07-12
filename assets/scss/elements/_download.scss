@@ -1,0 +1,28 @@
+
+
+
+/* --------------- download style-5 --------------- */
+.download.style-5{
+    .content{
+        h2{
+            font-size: 50px;
+            span{
+                position: relative;
+                .head-line{
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 100%;
+                }
+                .head-pen{
+                    position: absolute;
+                    right: 102%;
+                    bottom: -5px;
+                    transform: rotateY(180deg);                
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,203 @@
+
+
+
+/* --------------- about2 page style-5 --------------- */
+.about-page.style-2{
+    color: #000;
+    .about.style-2{
+        position: relative;
+        .img{
+            height: 530px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .info{
+            .text{
+                color: #666;
+                font-size: 16px;
+            }
+            .nav{
+                padding: 15px;
+                border-radius: 30px;
+                border: 1px solid #9993;
+                box-shadow: 0 0 20px #0001;
+                justify-content: space-around;
+                margin: 40px 0 30px;
+                .nav-item{
+                    .nav-link{
+                        position: relative;
+                        color: #000;
+                        border-radius: 0;
+                        background: transparent;
+                        padding: 0;
+                        padding-left: 20px;
+                        font-weight: bold;
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            left: 0;
+                            top: 7px;
+                            width: 8px;
+                            height: 8px;
+                            transform: rotate(45deg);
+                            background-color: #9999;
+                        }
+                        &.active{
+                            color: var(--color-blue5);
+                        }
+                    }
+                }
+            }
+        }
+
+        .pattern_l{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: left center;
+        }
+        .pattern_r{
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: right center;
+        }
+    }
+
+    .timeline{
+        position: relative;
+        .card-year{
+            h3{
+                color: var(--color-blue5);
+                font-size: 44px;
+            }
+        }
+
+        .timeline-content{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                left: 50%;
+                transform: translateX(-50%);
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background-color: #d2e7ff;
+            }
+
+            .timeline-card{
+                position: relative;
+                padding: 30px 0;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    left: calc(50% - 14px);
+                    top: calc(50% - 1px);
+                    width: 28px;
+                    height: 2px;
+                    background-color: var(--color-blue5);
+                    z-index: 2;
+                }
+
+                &:first-of-type{
+                    padding-top: 0;
+                }
+                &:last-of-type{
+                    padding-bottom: 0;
+                }
+
+                .line{
+                    position: absolute;
+                    content: "";
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 0;
+                    width: 1px;
+                    height: 100%;
+                    background-color: var(--color-blue5);
+                    z-index: 6;
+                    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                    transition: all 1s ease-in-out;
+                    
+                    &.animated{
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                }
+            }
+
+            .card-info{
+                position: relative;
+                padding: 30px;
+                border-radius: 5px;
+                background-color: #fff;
+                h6{
+                    font-weight: bold;
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                    position: relative;
+                    z-index: 5;
+                    text-transform: capitalize;
+                }
+                p{
+                    color: #666;
+                    position: relative;
+                    z-index: 5;
+                }
+                .num{
+                    font-size: 100px;
+                    font-weight: 600;
+                    line-height: 1;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: linear-gradient(60deg, transparent 0%, #f6f6f6 100%);
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+
+    .clients-imgs{
+        .clients-content{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .client-logo{
+                width: 180px;
+                height: 85px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                box-shadow: 0px 16px 32px 0px #0000000f;
+                border-radius: 5px;
+                padding: 25px;
+                margin: 15px;
+            }
+        }
+
+        .about2-imgs-slider{
+            .img{
+                display: block;
+                height: 480px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .swiper-wrapper {
+                -webkit-transition-timing-function: linear !important;
+                transition-timing-function: linear !important;
+                position: relative;
+            }
+        }
+    }
+}

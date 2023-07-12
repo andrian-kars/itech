@@ -1,0 +1,33 @@
+
+
+
+/* --------------- faq-page style-5 --------------- */
+.erorr-404-page.style-5{
+    position: relative;
+    color: #000;
+    .erorr-page{
+        background-image: url(../img/comming_back1.png);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 100px 0;
+        .content{
+            padding-top: 125px;
+
+            .info{
+                .icon{
+                    width: 100px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .img{
+                img{
+                    height: 550px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+
+
+
+/* --------------- faq-page style-5 --------------- */
+.signin-page.style-5{
+
+    .signin{
+        position: relative;
+        color: #000;
+        background-image: url(../img/comming_back1.png);
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        .form-content{
+            background-color: #fff;
+            box-shadow: 0px 30px 60px 0px #0000000f;
+            border-radius: 10px;
+            .info{
+                padding: 50px;
+                text-align: center;
+                .logo{
+                    display: block;
+                    padding-bottom: 40px;
+                    border-bottom: 1px solid #9993;
+                    margin-bottom: 40px;
+                    img{
+                        width: 200px;
+                    }
+                }
+                .or-line{
+                    position: relative;
+                    text-align: center;
+                    margin: 25px 0;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        top: 50%;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #9995;
+                    }
+                    span{
+                        position: relative;
+                        width: 40px;
+                        height: 40px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        border: 1px solid #9995;
+                        background-color: #fff;
+                        z-index: 10;
+                    }
+                }
+    
+                .group-icon{
+                    position: relative;
+                    font-size: 13px;
+                    .form-control{
+                        padding: 18px 15px 18px 40px;
+                        font-size: 13px;
+                    }
+                    .icon{
+                        position: absolute;
+                        left: 15px;
+                        top: 20px;
+                    }
+                }
+            }
+        }
+
+        .sign-imgs-slider{
+            position: relative;
+            background-color: #b6c7e1;
+            height: 100%;
+            .swiper-pagination{
+                position: absolute;
+                top: 35px;
+                .swiper-pagination-bullet {
+                    margin: 0 5px;
+                    width: 40px;
+                    height: 4px;
+                    border-radius: 0;
+                    background: #fff;
+                    &.swiper-pagination-bullet-active{
+                        border-radius: 0;
+                        color: #fff;
+                    }
+                }
+            }
+            .slide-card{
+                text-align: center;
+                padding-top: 80px;
+                h3{
+                    font-size: 36px;
+                    margin-bottom: 50px;
+                    color: #fff;
+                }
+                .img{
+                    padding: 0 50px;
+                    img{
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        object-fit: cover;
+                        object-position: bottom;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .signin-page.style-5 .signin .form-content .info{
+        padding: 30px 20px;
+        .butn{
+            width: 100%;
+        }
+    }
+}

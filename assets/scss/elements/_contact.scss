@@ -1,0 +1,266 @@
+
+
+
+/* --------------- contact style-1 --------------- */
+
+.contact.style-1 {
+    position: relative;
+    overflow: hidden;
+    .container {
+        position: relative;
+        z-index: 5;
+    }
+    .content {
+        .contact_info {
+            p {
+                color: #fff;
+                font-size: 13px;
+            }
+            ul {
+                margin: 50px 0;
+                li {
+                    color: #fff;
+                    margin: 15px 0;
+
+                    strong{
+                        margin-right: 5px;
+                    }
+                }
+            }
+            a {
+                color: #fff;
+                text-decoration: underline !important;
+                text-transform: uppercase;
+                font-size: 13px;
+            }
+        }
+        .contact_form {
+            .form-control,
+            .form-select {
+                border: 0;
+                font-size: 13px;
+                min-height: 50px;
+            }
+
+            textarea{
+                min-height: 125px !important;
+            }
+        }
+    }
+    .contact_globe {
+        position: absolute;
+        left: 0;
+        top: -10%;
+        width: 47%;
+        height: 120%;
+        object-fit: cover;
+        object-position: right;
+        max-height: none;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        opacity: 0.3;
+        -webkit-animation: rotate-center 100s linear infinite both;
+        animation: rotate-center 100s linear infinite both;
+    }
+    //   --------- animation ---------
+    @-webkit-keyframes rotate-center {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes rotate-center {
+        0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+}
+
+
+/* --------------- contact style-2 --------------- */
+.contact.style-2{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 250px;
+    .global_2{
+        position: absolute;
+        left: 25%;
+        bottom: -500px;
+        width: 55%;
+        z-index: 2;
+        opacity: 0.7;
+        -webkit-animation: rotate-center 100s linear infinite both;
+            animation: rotate-center 100s linear infinite both;
+    }
+}
+
+/* --------------- contact style-6 --------------- */
+.contact.style-6{
+    .content{
+        position: relative;
+        border-top: 10px solid var(--color-blue6);
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        padding: 100px 15px;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg , transparent , #def1fa , transparent , #e8e8f3 , transparent);
+            background-size: 400% 400%;
+            animation: gradient 20s linear infinite;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        .contact_a{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-bottom-left-radius: 30px;
+            pointer-events: none;
+            max-width: 20%;
+        }
+        .contact_message{
+            position: absolute;
+            right: -150px;
+            top: 100px;
+            border-bottom-left-radius: 30px;
+            pointer-events: none;
+            max-width: 30%;
+        }
+
+        .form{
+            position: relative;
+            z-index: 5;
+        }
+    }
+
+    .form-group{
+        .form-control,
+        .form-select{
+            border: 1px solid #9994;
+            border-radius: 30px;
+            min-height: 50px;
+            font-size: 12px;
+            padding: 10px 25px;
+            &:focus{
+                border-color: var(--color-blue6);
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
+
+/* --------------- contact style-13 --------------- */
+.contact.style-13{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-color: #eaedf2;
+    }
+    .content{
+        padding: 5vw;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 30px #0001;
+        .contact-info{
+            p{
+                font-size: 16px;
+                color: #666;
+            }
+            li{
+                font-size: 16px;
+                color: #666;
+                margin: 10px 0;
+                strong{
+                    color: #000;
+                }
+            }
+        }
+        .contact-form{
+            .form-group{
+                position: relative;
+                margin-bottom: 20px;
+                .form-control{
+                    min-height: 50px;
+                    border-radius: 7px;
+                    border: 1px solid #9991;
+                    box-shadow: 0 0 25px #0001;
+                    padding: 10px 10px 10px 40px;
+                }
+                .icon{
+                    position: absolute;
+                    top: 14px;
+                    left: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------- contact style-14 --------------- */
+.contact.style-14{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background-color: #ecf0f3;
+    }
+    .contact-card{
+        position: relative;
+        padding: 120px 4vw;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 30px #0001;
+        overflow: hidden;
+        .row{
+            position: relative;
+            z-index: 5;
+        }
+        .img_back{
+            position: absolute;
+            content: "";
+            left: 10%;
+            top: 0;
+            width: 80%;
+            height: 100%;
+            max-height: unset;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+  

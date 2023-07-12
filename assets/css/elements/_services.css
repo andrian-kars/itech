@@ -1,0 +1,191 @@
+/* --------------- services styles --------------- */
+.services.style-1 {
+  position: relative; }
+  .services.style-1 .ser_shap_l {
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    z-index: -1;
+    -webkit-transition: all 5s ease;
+    -o-transition: all 5s ease;
+    transition: all 5s ease; }
+  .services.style-1 .ser_shap_r {
+    position: absolute;
+    right: 0;
+    top: 25%; }
+  .services.style-1 .service-box {
+    position: relative;
+    z-index: 5;
+    padding: 30px;
+    border: 1px solid #9993;
+    border-radius: 8px;
+    display: block;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .services.style-1 .service-box h5 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 35px; }
+      .services.style-1 .service-box h5 a {
+        color: #000;
+        font-weight: bold; }
+      .services.style-1 .service-box h5 .num {
+        color: var(--color-main);
+        font-size: 12px; }
+    .services.style-1 .service-box .icon {
+      margin-bottom: 35px; }
+      .services.style-1 .service-box .icon img {
+        width: 60px;
+        height: 60px;
+        -o-object-fit: cover;
+        object-fit: cover; }
+    .services.style-1 .service-box .info .text {
+      color: #666;
+      margin-bottom: 20px;
+      font-size: 13px; }
+    .services.style-1 .service-box .info .tags a {
+      font-size: 11px;
+      padding: 3px 7px;
+      border-radius: 4px;
+      background-color: #eef4f8;
+      margin-top: 10px; }
+    .services.style-1 .service-box:hover {
+      border-color: transparent;
+      -webkit-box-shadow: 0px 54px 115px 0px rgba(52, 60, 66, 0.25);
+      box-shadow: 0px 54px 115px 0px rgba(52, 60, 66, 0.25); }
+      .services.style-1 .service-box:hover h5 a {
+        color: var(--color-main); }
+
+.tags.style-2 a {
+  font-size: 11px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background-color: #131172;
+  margin: 3px; }
+
+.services_projects {
+  background-image: url(../../assets/img/services_work.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+  .services_projects .swiper-button-next, .services_projects .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .services_projects .swiper-button-next:hover, .services_projects .swiper-button-prev:hover {
+      background: var(--color-lightBlue) !important; }
+
+.swiper-slide-duplicate-prev .service-box {
+  border: 0 !important; }
+
+.services.style-3 {
+  background-color: #f0eff5; }
+  .services.style-3 .service-card.style-3 {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    height: 100%; }
+    .services.style-3 .service-card.style-3 .icon {
+      margin-bottom: 60px; }
+      .services.style-3 .service-card.style-3 .icon img {
+        width: 125px;
+        height: 120px;
+        -o-object-fit: contain;
+        object-fit: contain; }
+    .services.style-3 .service-card.style-3 .info .title {
+      font-size: 18px;
+      color: #000;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      font-weight: bold; }
+    .services.style-3 .service-card.style-3 .info .text {
+      font-size: 13px;
+      color: #666; }
+    .services.style-3 .service-card.style-3 .info a {
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 10px;
+      text-transform: uppercase; }
+      .services.style-3 .service-card.style-3 .info a:hover {
+        color: var(--color-blue2); }
+
+.services-slider.style-6 .swiper-container {
+  padding-bottom: 100px; }
+
+.services-slider.style-6 .swiper-slide {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  top: 0; }
+  .services-slider.style-6 .swiper-slide.swiper-slide-nth-next-2 {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    top: 100px;
+    padding: 0 9px; }
+  .services-slider.style-6 .swiper-slide.swiper-slide-next {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    top: 50px;
+    padding: 0 12px; }
+  .services-slider.style-6 .swiper-slide.swiper-slide-active {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    padding: 0 20px;
+    -webkit-filter: drop-shadow(5px 50px 30px #07397211);
+    filter: drop-shadow(5px 50px 30px #07397211); }
+  .services-slider.style-6 .swiper-slide.swiper-slide-prev {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    top: 50px;
+    padding: 0 12px; }
+  .services-slider.style-6 .swiper-slide.swiper-slide-nth-prev-2 {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    top: 100px;
+    padding: 0 9px; }
+
+.service-card.style-6 {
+  text-align: center;
+  padding: 30px 8%;
+  background-color: #f1f2fa;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 20px 0;
+  display: block;
+  color: #000; }
+  .service-card.style-6 .icon {
+    -webkit-filter: drop-shadow(5px 15px 20px #07397255);
+    filter: drop-shadow(5px 15px 20px #07397255);
+    margin-bottom: 25px; }
+    .service-card.style-6 .icon img {
+      max-height: 100px;
+      max-width: 100px;
+      -o-object-fit: contain;
+      object-fit: contain; }
+  .service-card.style-6 .info h5 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px; }
+  .service-card.style-6 .info .text {
+    font-size: 11px;
+    color: #666; }

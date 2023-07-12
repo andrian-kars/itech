@@ -1,0 +1,235 @@
+body {
+  direction: rtl;
+  font-family: 'El Messiri', sans-serif; }
+
+.butn.sm-butn, .btn.sm-butn {
+  padding: 12px 25px; }
+  .butn.sm-butn span, .btn.sm-butn span {
+    line-height: 1; }
+
+.bi-arrow-right,
+.bi-arrow-left,
+.fa-chevron-right,
+.fa-chevron-left {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.section-head.style-6 h2 span small {
+  font-size: 40px; }
+
+p {
+  font-size: 18px; }
+
+.navbar.style-6 .nav-item .nav-link {
+  font-size: 13px; }
+  .navbar.style-6 .nav-item .nav-link::after {
+    right: auto;
+    left: -16px; }
+
+header.style-6 .info h6 {
+  letter-spacing: 0; }
+
+header.style-6 .info h1 {
+  font-size: 70px; }
+  header.style-6 .info h1 span small {
+    font-size: 70px; }
+
+header.style-6 .info .text {
+  font-size: 18px; }
+
+header.style-6 .info .form .form-group {
+  border-right: 0;
+  border-left: 1px solid #9994; }
+  header.style-6 .info .form .form-group input {
+    font-size: 13px; }
+
+.about.style-6 {
+  overflow: hidden; }
+  .about.style-6 .content .info .text {
+    font-size: 18px; }
+  .about.style-6 .content .info .vid-btn {
+    font-size: 13px; }
+    .about.style-6 .content .info .vid-btn i {
+      margin-right: auto;
+      margin-left: 5px; }
+  .about.style-6 .bubbles {
+    right: auto;
+    left: 0; }
+
+.choose-us.style-6 {
+  overflow: hidden; }
+  .choose-us.style-6 .img {
+    margin-right: -200px;
+    margin-left: 0; }
+    .choose-us.style-6 .img img {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
+  .choose-us.style-6 .bubbles {
+    right: 0;
+    left: auto; }
+
+footer.style-6 .form .form-group .icon {
+  right: 15px;
+  left: auto; }
+
+footer.style-6 .form .form-group button {
+  right: auto;
+  left: 5px; }
+  footer.style-6 .form .form-group button i {
+    margin-top: 5px; }
+
+.to_top {
+  right: auto;
+  left: -50px; }
+  .to_top.show {
+    left: 30px;
+    right: auto; }
+
+.community.style-5 .content .commun-card {
+  border-right: none;
+  border-left: 1px solid #99999933; }
+  .community.style-5 .content .commun-card .icon {
+    margin-right: 0;
+    margin-left: 25px; }
+
+.number-card.style-6 {
+  border-right: none;
+  border-left: 1px solid #9993; }
+  .number-card.style-6 .text {
+    font-size: 18px; }
+
+.features-card.style-5 {
+  min-height: 330px; }
+
+.shop-page .filter .filter-card .filter-card-item .search-group button {
+  left: 8px;
+  right: auto; }
+
+.blog-page.style-5 .related-postes-slider .swiper-button-prev, .blog-page.style-5 .related-postes-slider .swiper-container-rtl .swiper-button-next {
+  left: 50px;
+  right: auto;
+  top: -60px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.blog-page.style-5 .related-postes-slider .swiper-button-next, .blog-page.style-5 .related-postes-slider .swiper-container-rtl .swiper-button-prev {
+  right: auto;
+  top: -60px;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.blog-page.style-5 .related-postes-slider .swiper-slide-prev::after,
+.blog-page.style-5 .related-postes-slider .swiper-slide-active::after {
+  left: -40px;
+  right: auto; }
+
+.about.style-4 .content.frs-content .bubble,
+.about.style-4 .content.trd-content .bubble,
+.about.style-4 .content.frs-content .lines,
+.about.style-4 .content.trd-content .lines {
+  right: 0;
+  left: auto;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.about.style-4 .content.sec-content .bubble2 {
+  right: auto;
+  left: 0; }
+
+.about.style-4 .btn-img .icon {
+  padding-right: 0;
+  margin-right: 0;
+  border-right: 0 solid rgba(0, 0, 0, 0.067);
+  padding-left: 15px;
+  margin-left: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.067); }
+
+.testimonials.style-4 .content .testi-cards .client_card .user_img {
+  margin-right: 0;
+  margin-left: 25px; }
+
+.testimonials.style-4 .content .numbs .num-card:not(:last-of-type) {
+  padding-right: 0;
+  margin-right: 0;
+  border-right: 0 solid rgba(153, 153, 153, 0.2);
+  padding-left: 50px;
+  margin-left: 50px;
+  border-left: 1px solid rgba(153, 153, 153, 0.2); }
+
+.pricing.style-4 .content .row .col-lg-6:nth-of-type(2) .price-card {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+.pricing.style-4 .content .price-card .off {
+  right: auto;
+  left: 45px; }
+
+.pricing.style-4 .content .row .col-lg-6:nth-of-type(1) .price-card {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-right: 1px solid #e9e8ee;
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  margin-left: -1px; }
+
+.community.style-4 .content .commun-card {
+  border-right: 0 solid rgba(153, 153, 153, 0.2);
+  border-left: 1px solid rgba(153, 153, 153, 0.2); }
+
+.community.style-4 .content .commun-card .icon {
+  margin-right: 0;
+  margin-left: 25px; }
+
+header.style-3 .main-img {
+  right: auto;
+  left: 0;
+  -o-object-position: left;
+  object-position: left;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+header.style-3 .content .info .form-group.input-with-icon .input-icon {
+  left: auto;
+  right: 20px; }
+
+header.style-3 .content .info .form-group.input-with-icon .form-control {
+  padding: 12px 40px 12px 20px; }
+
+.testimonials.style-3 .testimonial-slider.style-3 .swiper-button-next {
+  right: auto;
+  left: 40px; }
+
+.testimonials.style-3 .testimonial-slider.style-3 .swiper-button-prev {
+  right: auto;
+  left: 0; }
+
+.section-head.style-3 h3 span::after {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  left: auto;
+  right: 0; }
+
+.about.style-3 .img-left {
+  left: auto;
+  right: 0; }
+  .about.style-3 .img-left > img {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+.about.style-3 .btm-content .img-right {
+  right: auto;
+  left: 0; }
+
+.project-card.style-3:hover .info {
+  left: auto;
+  right: 20px; }

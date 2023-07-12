@@ -1,0 +1,82 @@
+.markets{
+    background-color: #080019;
+    .markets-table{
+        .table-head{
+            display: flex;
+            .item{
+                margin-bottom: 20px;
+                &:nth-of-type(1){
+                    width: 24%;
+                }
+                &:nth-of-type(2){
+                    width: 17%;
+                }
+                &:nth-of-type(3){
+                    width: 12%;
+                }
+                &:nth-of-type(4){
+                    width: 15%;
+                }
+                &:nth-of-type(5){
+                    width: 20%;
+                }
+                &:nth-of-type(6){
+                    width: 12%;
+                }
+            }
+        }
+        .table-body{
+            .body-row{
+                display: flex;
+                align-items: center;
+                background-color: #120a22;
+                border-radius: 10px;
+                padding: 15px 20px;
+                margin-bottom: 15px;
+                .item{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    &:nth-of-type(1){
+                        width: 24%;
+                    }
+                    &:nth-of-type(2){
+                        width: 17%;
+                    }
+                    &:nth-of-type(3){
+                        width: 12%;
+                    }
+                    &:nth-of-type(4){
+                        width: 15%;
+                    }
+                    &:nth-of-type(5){
+                        width: 20%;
+                    }
+                    &:nth-of-type(6){
+                        width: 12%;
+                    }
+
+                    .per-up{
+                        color: #f7931a;
+                    }
+
+                    .trad-btn{
+                        font-weight: 500;
+                        background-color: #fff2;
+                        border-radius: 30px;
+                        padding: 5px 20px;
+                        &:hover{
+                            color: #fff;
+                            background-color: var(--color-red2);
+                        }
+                    }
+
+                    strong{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+

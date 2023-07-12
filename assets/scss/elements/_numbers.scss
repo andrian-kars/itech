@@ -1,0 +1,188 @@
+
+
+
+/* --------------- numbers style-6 --------------- */
+.number-card.style-6{
+    border-right: 1px solid #9993;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    h2{
+        font-size: 45px;
+        color: var(--color-blue6);
+    }
+    .text{
+        font-size: 15px;
+        color: #000;
+        line-height: 1.5;
+        text-transform: capitalize;
+    }
+}
+
+/* --------------- numbers style-8 --------------- */
+.numbers.style-8{
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    .r_shape{
+        position: absolute;
+        right: 100px;
+        bottom: 270px;
+        pointer-events: none;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        left: -150px;
+        top: 120px;
+        background-color: var(--color-orange1);
+        pointer-events: none;
+    }
+    .content{
+        position: relative;
+        padding-top: 240px;
+        padding-bottom: 380px;
+        .logo-icon{
+            text-align: center;
+        }
+        .plat-icons{
+            .icon{
+                position: absolute;
+                animation-duration: 1.5s;
+                &.icon-shadow{
+                    background-color: #fff;
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                    box-shadow: 0px 10px 15px #0001;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:nth-of-type(1){
+                    top: 90px;
+                    right: 0;
+                    animation-delay: -0.6s;
+                }
+                &:nth-of-type(2){
+                    top: 200px;
+                    right: 345px;
+                    animation-delay: 0;
+                }
+                &:nth-of-type(3){
+                    top: 110px;
+                    left: 335px;
+                    animation-delay: 0.3s;
+                }
+                &:nth-of-type(4){
+                    top: 140px;
+                    left: 0;
+                    animation-delay: 0.6s;
+                }
+                &:nth-of-type(5){
+                    width: 100px;
+                    height: 100px;
+                    bottom: 110px;
+                    right: 265px;
+                    animation-delay: 0.9s;
+                }
+                &:nth-of-type(6){
+                    width: 180px;
+                    height: 180px;
+                    bottom: 100px;
+                    left: 200px;
+                    animation-delay: 1.2s;
+                }
+            }
+        }
+
+        .num8_circle{
+            position: absolute;
+            top: -235px;
+            width: 100%;
+            // height: 100%;
+            max-height: unset;
+            max-width: unset;
+            z-index: -1;
+            pointer-events: none;
+        }
+    }
+
+    .numbers-btm{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background-color: var(--color-gray2);
+        }
+        .numbers-content{
+            padding: 40px 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #0001;
+            position: relative;
+            z-index: 10;
+            .number-card{
+                display: flex;
+                .icon{
+                    margin-inline-end: 25px;
+                    flex-shrink: 0;
+                    padding-top: 15px;
+                    img{
+                        width: 40px;
+                    }
+                }
+                .inf{
+                    h3{
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+                    p{
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* --------------- numbers style-14 --------------- */
+.numbers.style-14{
+    padding: 70px 0;
+    background-color: var(--color-red1);
+    .number-item{
+        .icon{
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 10px 10px 0 #0002;
+            margin-bottom: 35px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .info{
+            h2{
+                font-size: 35px;
+                color: #fff;
+                margin-bottom: 5px;
+            }
+            p{
+                color: #ffa7af;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+

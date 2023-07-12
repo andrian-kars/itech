@@ -1,0 +1,17 @@
+/* --------------- proccess styles --------------- */
+.process.style-12 .process-card {
+  padding: 50px;
+  text-align: center;
+  height: 80px;
+  margin-bottom: 30px; }
+  .process.style-12 .process-card .icon img {
+    height: 80px; }
+  .process.style-12 .process-card .info h6 {
+    font-size: 20px;
+    font-weight: 500; }
+  .process.style-12 .process-card .info p {
+    color: #89888f; }
+  .process.style-12 .process-card .info .step {
+    font-size: 14px;
+    color: var(--color-yellowGreen);
+    text-transform: uppercase; }

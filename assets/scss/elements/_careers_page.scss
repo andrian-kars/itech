@@ -1,0 +1,189 @@
+
+
+
+/* --------------- faq-page style-5 --------------- */
+.careers-page.style-5{
+    .careers-features{
+        .careers-feat-card{
+            padding: 40px 30px;
+            border: 1px solid #9992;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+            &:hover{
+                box-shadow: 0px 16px 32px 0px #0000000f;
+            }
+            .icon{
+                margin-bottom: 30px;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    object-fit: contain;
+                }
+            }
+            .info{
+                h4{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: #777;
+                }
+            }
+        }
+    }
+
+    .careers-images{
+        .swiper-wrapper {
+            -webkit-transition-timing-function: linear !important;
+            transition-timing-function: linear !important;
+            position: relative;
+        }
+    }
+
+    .careers-positions{
+        .position-card{
+            padding: 30px;
+            border: 1px solid #9993;
+            border-radius: 5px;
+            background-color: #fff;
+            display: block;
+            position: relative;
+            h5{
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 16px;
+                color: #666;
+                margin-bottom: 50px;
+            }
+
+            .time{
+                font-size: 16px;
+                color: #000;
+            }
+
+            .trend-mark{
+                position: absolute;
+                width: 36px;
+                height: 60px;
+                line-height: 50px;
+                top: 0;
+                right: 30px;
+                background-color: var(--color-blue5);
+                color: #fff;
+                text-align: center;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    bottom: 0;
+                    width: 36px;
+                    height: 36px;
+                    border-top: 18px solid transparent;
+                    border-right: 18px solid transparent;
+                    border-left: 18px solid transparent;
+                    border-bottom: 18px solid #fff;
+                }
+            }
+        }
+    }
+
+    .career-form{
+        position: relative;
+        background-color: var(--color-blue5);
+        color: #fff;
+        .container{
+            position: relative;
+            z-index: 10;
+        }
+        .map_img{
+            position: absolute;
+            left: 0;
+            top: 70px;
+            pointer-events: none;
+            opacity: 0.3;
+            width: 50%;
+        }
+        h2{
+            margin-bottom: 10px;
+            font-size: 44px;
+        }
+        p{
+            font-size: 16px;
+        }
+
+        .mum-card{
+            padding: 20px 0;
+            margin-top: 20px;
+            border-top: 1px solid #fff2;
+            h3{
+                font-size: 50px;
+            }
+            small{
+                font-size: 14px;
+                color: #9dc7f9;
+            }
+        }
+
+        .form{
+            .form-group{
+                position: relative;
+                .icon{
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    color: #fff;
+                }
+                .form-control{
+                    background-color: #fff1;
+                    border-radius: 5px;
+                    min-height: 50px;
+                    border: 0;
+                    font-weight: 300;
+                    color: #fff;
+                    padding-left: 40px;
+                    &::placeholder{
+                        color: #9ecbff;
+                        font-weight: 300;
+                    }
+                    &:focus{
+                        border: 1px solid #fff;
+                        background-color: transparent;
+                    }
+                }
+                textarea.form-control{
+                    padding-top: 10px;
+                }
+    
+                &.upload-card{
+                    text-align: center;
+                    .form-control{
+                        position: relative;
+                        color: #fff3;
+                        background-color: #0002;
+                        padding: 12px;
+                    }
+                    .upload_input{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        z-index: 5;
+                    }
+                }
+            }
+            .btn{
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    
+}

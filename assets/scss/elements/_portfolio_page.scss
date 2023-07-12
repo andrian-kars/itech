@@ -1,0 +1,45 @@
+
+
+
+/* --------------- portfolio-page style-1 --------------- */
+.portfolio-page.style-1{
+    .portfolio-projects.style-1{
+        background-color: #e7f1ff;
+        .controls{
+            text-align: center;
+            margin-bottom: 50px;
+            button{
+                border: 0;
+                background: transparent;
+                font-weight: bold;
+                text-transform: capitalize;
+                margin: 10px;
+                &.mixitup-control-active{
+                    color: var(--color-blue5);
+                }
+            }
+        }
+    }
+    .download.style-5{
+        position: relative;
+        overflow: hidden;
+        .content h2 span .head-pen{
+            right: auto;
+            left: 102%;
+            transform: rotateY(0);
+        }
+
+        .contact_globe{
+            position: absolute;
+            height: 150%;
+            max-height: none;
+            width: 60%;
+            top: -25%;
+            left: 20%;
+            opacity: 0.15;
+            -webkit-animation: rotate-center 100s linear infinite both;
+            animation: rotate-center 100s linear infinite both;
+        }
+    }
+     
+}

@@ -1,0 +1,41 @@
+/* --------------- inner-header style-5 --------------- */
+.inner-header.style-5{
+    background-image: url(../img/inner5_back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000;
+    .content{
+        padding: 120px 0;
+        position: relative;
+        .links{
+            a{
+                font-size: 16px;
+                color: #999;
+                text-transform: capitalize;
+                position: relative;
+                padding-right: 20px;
+                border-right: 1px solid #9993;
+                margin-right: 20px;
+                &:last-of-type{
+                    font-weight: bold;
+                    color: var(--color-main);
+                    border: 0;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+        h2{
+            font-size: 60px;
+            text-transform: capitalize;
+            margin-top: 20px;
+        }
+        .side-img{
+            position: absolute;
+            right: 0;
+            top: 30%;
+            height: 40%;
+            pointer-events: none;
+        }
+    }
+}

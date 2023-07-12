@@ -1,0 +1,11 @@
+/* --------------- proccess styles --------------- */
+.proccess.style-12 .process-card {
+  padding: 50px;
+  text-align: center;
+  height: 80px;
+  margin-bottom: 30px; }
+  .proccess.style-12 .process-card .info h6 {
+    font-size: 20px;
+    font-weight: 500; }
+  .proccess.style-12 .process-card .info p {
+    color: #89888f; }

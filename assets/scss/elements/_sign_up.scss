@@ -1,0 +1,40 @@
+/* --------------- sgin up styles --------------- */
+.signup.style-11{
+    position: relative;
+    .pattern{
+        position: absolute;
+        left: 10%;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .content{
+        position: relative;
+        z-index: 10;
+        .form-group{
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 50px;
+            box-shadow: 0 0 20px #0001;
+            padding-left: 20px;
+            overflow: hidden;
+            margin-top: 80px;
+            .form-control{
+                height: 50px;
+                border: 0;
+                padding-left: 15px;
+            }
+            button{
+                border: 0;
+                background-color: var(--color-green);
+                color: #fff;
+                flex-shrink: 0;
+                padding: 15px 30px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

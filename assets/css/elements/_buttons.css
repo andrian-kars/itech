@@ -1,0 +1,133 @@
+/* --------------- buttons styles --------------- */
+.butn,
+.btn {
+  padding: 12px 30px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 500;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .butn span,
+  .btn span {
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    text-transform: capitalize; }
+  .butn small,
+  .btn small {
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+    text-transform: capitalize; }
+  .butn.butn-gard::before,
+  .btn.butn-gard::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 150%;
+    height: 100%;
+    z-index: 1;
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #0c3df4), color-stop(45%, #02b5ff), color-stop(#02b5ff), to(#0c3df4));
+    background: -webkit-linear-gradient(left, #0c3df4 10%, #02b5ff 45%, #02b5ff, #0c3df4);
+    background: -o-linear-gradient(left, #0c3df4 10%, #02b5ff 45%, #02b5ff, #0c3df4);
+    background: linear-gradient(to right, #0c3df4 10%, #02b5ff 45%, #02b5ff, #0c3df4);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .butn.butn-gard:hover::before,
+  .btn.butn-gard:hover::before {
+    left: -50%; }
+  .butn.dark-butn,
+  .btn.dark-butn {
+    background: #000; }
+    .butn.dark-butn span,
+    .butn.dark-butn small,
+    .btn.dark-butn span,
+    .btn.dark-butn small {
+      color: #fff; }
+  .butn.butn-blue6,
+  .btn.butn-blue6 {
+    background: var(--color-blue6); }
+    .butn.butn-blue6 span,
+    .butn.butn-blue6 small,
+    .btn.butn-blue6 span,
+    .btn.butn-blue6 small {
+      color: #fff; }
+  .butn.blue5-3Dbutn,
+  .btn.blue5-3Dbutn {
+    background: var(--color-blue5);
+    -webkit-box-shadow: 0px 4px 0px 0px var(--color-blue4);
+    box-shadow: 0px 4px 0px 0px var(--color-blue4);
+    -webkit-filter: drop-shadow(0 13px 20px #07397235);
+    filter: drop-shadow(0 13px 20px #07397235);
+    font-size: 12px; }
+    .butn.blue5-3Dbutn span,
+    .butn.blue5-3Dbutn small,
+    .btn.blue5-3Dbutn span,
+    .btn.blue5-3Dbutn small {
+      color: #fff; }
+  .butn.sm-butn,
+  .btn.sm-butn {
+    padding: 10px 25px; }
+    .butn.sm-butn span,
+    .btn.sm-butn span {
+      font-size: 12px; }
+  .butn:hover,
+  .btn:hover {
+    background: var(--color-main);
+    border-color: transparent !important; }
+    .butn:hover span,
+    .btn:hover span {
+      color: #fff; }
+  .butn.hover-darkBlue:hover,
+  .btn.hover-darkBlue:hover {
+    background: var(--color-darkBlue);
+    border-color: transparent !important; }
+    .butn.hover-darkBlue:hover span,
+    .butn.hover-darkBlue:hover small,
+    .btn.hover-darkBlue:hover span,
+    .btn.hover-darkBlue:hover small {
+      color: #fff; }
+  .butn.hover-blue2:hover,
+  .btn.hover-blue2:hover {
+    background: var(--color-blue2);
+    border-color: transparent !important; }
+    .butn.hover-blue2:hover span,
+    .butn.hover-blue2:hover small,
+    .btn.hover-blue2:hover span,
+    .btn.hover-blue2:hover small {
+      color: #fff; }
+  .butn.hover-blue4:hover,
+  .btn.hover-blue4:hover {
+    background: var(--color-blue4);
+    border-color: transparent !important; }
+    .butn.hover-blue4:hover span,
+    .butn.hover-blue4:hover small,
+    .btn.hover-blue4:hover span,
+    .btn.hover-blue4:hover small {
+      color: #fff; }
+  .butn.hover-blue5:hover,
+  .btn.hover-blue5:hover {
+    background: var(--color-blue5);
+    border-color: transparent !important; }
+    .butn.hover-blue5:hover span,
+    .butn.hover-blue5:hover small,
+    .btn.hover-blue5:hover span,
+    .btn.hover-blue5:hover small {
+      color: #fff; }
+  .butn.hover-lightBlue:hover,
+  .btn.hover-lightBlue:hover {
+    background: var(--color-lightBlue);
+    border-color: transparent !important; }
+    .butn.hover-lightBlue:hover span,
+    .butn.hover-lightBlue:hover small,
+    .btn.hover-lightBlue:hover span,
+    .btn.hover-lightBlue:hover small {
+      color: var(--color-darkBlue); }

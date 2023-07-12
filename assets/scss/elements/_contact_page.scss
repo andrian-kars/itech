@@ -1,0 +1,16 @@
+
+
+
+/* --------------- contact page styles --------------- */
+.contact-page.style-5{
+    .contact.style-6 .form-group .form-control:focus, .contact.style-6 .form-group .form-select:focus{
+        border-color: var(--color-blue5);
+    }
+    .map{
+        iframe{
+            width: 100%;
+            margin-bottom: -6px;
+        }
+    }
+}
+

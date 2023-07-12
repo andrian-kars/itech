@@ -1,0 +1,547 @@
+
+
+/* --------------- helper classes --------------- */
+
+
+/* --------------- radius classes --------------- */
+.radius-1{
+    border-radius: 3px !important;
+}
+
+.radius-2{
+    border-radius: 5px !important;
+}
+
+.radius-3{
+    border-radius: 8px !important;
+}
+
+.radius-4{
+    border-radius: 10px !important;
+}
+
+.radius-5{
+    border-radius: 12px !important;
+}
+
+.radius-6{
+    border-radius: 15px !important;
+}
+
+.radius-7{
+    border-radius: 20px !important;
+}
+
+.radius-8{
+    border-radius: 25px !important;
+}
+
+.radius-9{
+    border-radius: 30px !important;
+}
+
+.radius-10{
+    border-radius: 50px !important;
+}
+
+/* --------------- margin classes --------------- */
+.mt-10{
+    margin-top: 10px !important;
+}
+
+.mt-15{
+    margin-top: 15px !important;
+}
+
+.mt-20{
+    margin-top: 20px !important;
+}
+
+.mt-30{
+    margin-top: 30px !important;
+}
+
+.mt-40{
+    margin-top: 40px !important;
+}
+
+.mt-50{
+    margin-top: 50px !important;
+}
+
+.mt-60{
+    margin-top: 60px !important;
+}
+
+.mt-70{
+    margin-top: 70px !important;
+}
+
+.mt-80{
+    margin-top: 80px !important;
+}
+
+.mt-90{
+    margin-top: 90px !important;
+}
+
+.mt-100{
+    margin-top: 100px !important;
+}
+
+.mt-150{
+    margin-top: 150px !important;
+}
+
+.mt-200{
+    margin-top: 200px !important;
+}
+
+.mb-10{
+    margin-bottom: 10px !important;
+}
+
+.mb-15{
+    margin-bottom: 15px !important;
+}
+
+.mb-20{
+    margin-bottom: 20px !important;
+}
+
+.mb-30{
+    margin-bottom: 30px !important;
+}
+
+.mb-40{
+    margin-bottom: 40px !important;
+}
+
+.mb-50{
+    margin-bottom: 50px !important;
+}
+
+.mb-60{
+    margin-bottom: 60px !important;
+}
+
+.mb-70{
+    margin-bottom: 70px !important;
+}
+
+.mb-80{
+    margin-bottom: 80px !important;
+}
+
+.mb-90{
+    margin-bottom: 90px !important;
+}
+
+.mb-100{
+    margin-bottom: 100px !important;
+}
+
+.mb-150{
+    margin-bottom: 150px !important;
+}
+
+.mb-200{
+    margin-bottom: 200px !important;
+}
+
+
+/* --------------- padding classes --------------- */
+.pt-10{
+    padding-top: 10px !important;
+}
+
+.pt-15{
+    padding-top: 15px !important;
+}
+
+.pt-20{
+    padding-top: 20px !important;
+}
+
+.pt-30{
+    padding-top: 30px !important;
+}
+
+.pt-40{
+    padding-top: 40px !important;
+}
+
+.pt-50{
+    padding-top: 50px !important;
+}
+
+.pt-60{
+    padding-top: 60px !important;
+}
+
+.pt-70{
+    padding-top: 70px !important;
+}
+
+.pt-80{
+    padding-top: 80px !important;
+}
+
+.pt-90{
+    padding-top: 90px !important;
+}
+
+.pt-100{
+    padding-top: 100px !important;
+}
+
+.pt-150{
+    padding-top: 150px !important;
+}
+
+.pt-200{
+    padding-top: 200px !important;
+}
+
+.pb-10{
+    padding-bottom: 10px !important;
+}
+
+.pb-15{
+    padding-bottom: 15px !important;
+}
+
+.pb-20{
+    padding-bottom: 20px !important;
+}
+
+.pb-30{
+    padding-bottom: 30px !important;
+}
+
+.pb-40{
+    padding-bottom: 40px !important;
+}
+
+.pb-50{
+    padding-bottom: 50px !important;
+}
+
+.pb-60{
+    padding-bottom: 60px !important;
+}
+
+.pb-70{
+    padding-bottom: 70px !important;
+}
+
+.pb-80{
+    padding-bottom: 80px !important;
+}
+
+.pb-90{
+    padding-bottom: 90px !important;
+}
+
+.pb-100{
+    padding-bottom: 100px !important;
+}
+
+.pb-150{
+    padding-bottom: 150px !important;
+}
+
+.pb-200{
+    padding-bottom: 200px !important;
+}
+
+/* --------------- opacity classes --------------- */
+.op-1{
+    opacity: 0.1;
+}
+
+.op-2{
+    opacity: 0.2;
+}
+
+.op-3{
+    opacity: 0.3;
+}
+
+.op-4{
+    opacity: 0.4;
+}
+
+.op-5{
+    opacity: 0.5;
+}
+
+.op-6{
+    opacity: 0.6;
+}
+
+.op-7{
+    opacity: 0.7;
+}
+
+.op-8{
+    opacity: 0.8;
+}
+
+.op-9{
+    opacity: 0.9;
+}
+
+.op-10{
+    opacity: 1;
+}
+
+
+/* --------------- lineHeight classes --------------- */
+.lh-1{
+    line-height: 1;
+}
+
+.lh-2{
+    line-height: 1.2;
+}
+
+.lh-3{
+    line-height: 1.4;
+}
+
+.lh-4{
+    line-height: 1.6;
+}
+
+.lh-5{
+    line-height: 1.8;
+}
+
+.lh-6{
+    line-height: 2;
+}
+
+.lh-7{
+    line-height: 2.5;
+}
+
+.lh-8{
+    line-height: 3;
+}
+
+/* --------------- border color classes --------------- */
+.brd-light{
+    border-color: #fff4 !important;
+}
+
+.brd-gray{
+    border-color: #0002 !important;
+}
+
+
+.bg-black{
+    background-color: #000 !important;
+}
+
+/* ---------------  color classes --------------- */
+.color-000{
+    color: #000 !important;
+}
+.color-111{
+    color: #111 !important;
+}
+.color-222{
+    color: #222 !important;
+}
+.color-333{
+    color: #333 !important;
+}
+.color-444{
+    color: #444 !important;
+}
+.color-555{
+    color: #555 !important;
+}
+.color-666{
+    color: #666 !important;
+}
+.color-777{
+    color: #777 !important;
+}
+.color-888{
+    color: #888 !important;
+}
+.color-999{
+    color: #999 !important;
+}
+
+/* --------------- icons size --------------- */
+.icon-10{
+    width: 10px ;
+    height: 10px;
+}
+
+
+.icon-15{
+    width: 15px;
+    height: 15px;
+}
+
+
+.icon-20{
+    width: 20px;
+    height: 20px;
+}
+
+.icon-25{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-30{
+    width: 30px;
+    height: 30px;
+}
+
+
+.icon-35{
+    width: 35px;
+    height: 35px;
+}
+
+.icon-40{
+    width: 40px;
+    height: 40px;
+}
+
+.icon-45{
+    width: 45px;
+    height: 45px;
+}
+
+.icon-50{
+    width: 50px;
+    height: 50px;
+}
+
+.icon-55{
+    width: 55px;
+    height: 55px;
+}
+
+.icon-60{
+    width: 60px;
+    height: 60px;
+}
+
+.icon-65{
+    width: 65px;
+    height: 65px;
+}
+
+.icon-70{
+    width: 70px;
+    height: 70px;
+}
+
+.icon-75{
+    width: 75px;
+    height: 75px;
+}
+
+.icon-80{
+    width: 80px;
+    height: 80px;
+}
+
+/* --------------- img classes --------------- */
+.img-cover{
+    display: block;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.img-contain{
+    display: block;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.imgrotate-scale-hover{
+    overflow: hidden;
+    display: block;
+    img{
+        transition: all 2s ease;
+    }
+    &:hover{
+        img{
+            transform: rotate(-10deg) scale(1.2);
+        }
+    }
+}
+
+/* --------------- letter spacing classes --------------- */
+.ltspc-1{
+    letter-spacing: 1px;
+}
+
+.ltspc-2{
+    letter-spacing: 2px;
+}
+
+.ltspc-3{
+    letter-spacing: 3px;
+}
+
+.ltspc-4{
+    letter-spacing: 4px;
+}
+
+.ltspc-5{
+    letter-spacing: 5px;
+}
+
+.ltspc-8{
+    letter-spacing: 8px;
+}
+
+.ltspc-10{
+    letter-spacing: 10px;
+}
+
+.ltspc-12{
+    letter-spacing: 12px;
+}
+
+.ltspc-15{
+    letter-spacing: 15px;
+}
+
+.ltspc-17{
+    letter-spacing: 17px;
+}
+
+.ltspc-20{
+    letter-spacing: 20px;
+}
+
+// ---------- font-size ---------
+.fs-10px{
+    font-size: 10px !important;
+}
+
+.fs-12px{
+    font-size: 12px !important;
+}
+
+.fs-14px{
+    font-size: 14px !important;
+}
+

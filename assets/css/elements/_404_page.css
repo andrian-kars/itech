@@ -1,0 +1,65 @@
+/* --------------- faq-page style-5 --------------- */
+.erorr-404-page.style-5 {
+  position: relative;
+  color: #000; }
+  .erorr-404-page.style-5 .comming-soon {
+    background-image: url(../img/comming_back1.png);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 0; }
+    .erorr-404-page.style-5 .comming-soon .content {
+      padding-top: 125px;
+      text-align: center; }
+      .erorr-404-page.style-5 .comming-soon .content .info h3 {
+        font-size: 40px;
+        margin-bottom: 30px; }
+      .erorr-404-page.style-5 .comming-soon .content .info p {
+        font-size: 16px;
+        color: #666; }
+      .erorr-404-page.style-5 .comming-soon .content .info .subscribe-form {
+        margin-top: 50px; }
+        .erorr-404-page.style-5 .comming-soon .content .info .subscribe-form .form-group {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          border-radius: 30px;
+          border: 1px solid #9993;
+          background-color: #fff;
+          -webkit-box-shadow: 0 0 30px #0001;
+          box-shadow: 0 0 30px #0001; }
+          .erorr-404-page.style-5 .comming-soon .content .info .subscribe-form .form-group .icon {
+            padding: 0 10px 0 30px;
+            -ms-flex-negative: 0;
+            flex-shrink: 0; }
+          .erorr-404-page.style-5 .comming-soon .content .info .subscribe-form .form-group .form-control {
+            border: 0; }
+      .erorr-404-page.style-5 .comming-soon .content .info .timing {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 70px; }
+        .erorr-404-page.style-5 .comming-soon .content .info .timing .item {
+          padding: 20px 0;
+          margin: 10px;
+          width: 100%;
+          background-color: #fff;
+          border-radius: 5px;
+          border-bottom: 3px solid var(--color-blue5); }
+          .erorr-404-page.style-5 .comming-soon .content .info .timing .item h2 {
+            font-size: calc(2vw + 20px); }
+          .erorr-404-page.style-5 .comming-soon .content .info .timing .item small {
+            font-size: 13px;
+            color: #999;
+            text-transform: capitalize; }

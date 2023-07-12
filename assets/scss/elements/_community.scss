@@ -1,0 +1,156 @@
+
+
+
+/* --------------- community style-4 --------------- */
+.community.style-4{
+    .content{
+        border: 1px solid #9993;
+        border-radius: 15px;
+        padding: 30px 0;
+        display: flex;
+        .commun-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33%;
+            border-right: 1px solid #9993;
+            padding: 20px 0;
+            &:last-of-type{
+                border: 0;
+            }
+            .icon{
+                flex-shrink: 0;
+                margin-right: 25px;
+                i{
+                    font-size: 60px;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: linear-gradient(to right,  #501e9c 0%,#8169f1 30%,#8169f1 30%,#a44cee 73%,#ff847f 100%);
+                }
+            }
+            .inf{
+                h5{
+                    font-size: 23px;
+                    color: #000;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                    line-height: 1.1;
+                }
+                p{
+                    font-size: 12px;
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+
+/* --------------- community style-5 --------------- */
+.community.style-5{
+    .content{
+        border: 1px solid #9993;
+        border-radius: 15px;
+        padding: 20px 0;
+        display: flex;
+        .commun-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33%;
+            border-right: 1px solid #9993;
+            padding: 10px 0;
+            &:last-of-type{
+                border: 0;
+            }
+            .icon{
+                flex-shrink: 0;
+                margin-right: 25px;
+                img{
+                    filter: drop-shadow(-10px 10px 20px #084cba77);
+                    -webkit-animation: scale_up_down 1s ease-in-out infinite alternate both;
+	                        animation: scale_up_down 1s ease-in-out infinite alternate both;
+                }
+                
+            }
+            .inf{
+                h5{
+                    font-size: 20px;
+                    color: #000;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                    line-height: 1.1;
+                }
+            }
+        }
+    }
+}
+
+/* --------------- community style-12 --------------- */
+.community.style-12{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background-color: #0f0e13;
+    }
+    .content{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+        border: 1px solid var(--color-yellowGreen);
+        border-radius: 5px;
+        z-index: 5;
+        background-color: #15141a;
+        
+        h2{
+            font-weight: 600;
+            font-size: 30px;
+            span{
+                color: transparent;
+                -webkit-text-stroke: 1px var(--color-yellowGreen);
+            }
+        }
+        .form-group{
+            display: flex;
+            align-items: center;
+            background-color: #1d1c23;
+            border-radius: 7px;
+            overflow: hidden;
+            // margin-inline-end: 50px;
+            .icon{
+                padding: 0 10px 0 20px;
+            }
+            input{
+                border: 0;
+                background: transparent;
+                color: #fff;
+                // width: 130px;
+                // min-width: max-content;
+            }
+        }
+
+        .social-icons{
+            a{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                // font-size: 13px;
+                text-align: center;
+                background-color: #1d1c23;
+                border-radius: 5px;
+                color: #fff;
+                margin-inline-start: 10px;
+            }
+        }
+    }
+}
+
+
+

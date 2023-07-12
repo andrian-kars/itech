@@ -1,0 +1,51 @@
+/* --------------- collections styles --------------- */
+.collections.style-12{
+    .collection-card{
+        .top-info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: -25px;
+            h6{
+                font-size: 17px;
+            }
+            p{
+                color: #67666c;
+                img{
+                    width: 10px;
+                    margin-inline-end: 2px;
+                }
+            }
+        }
+        .auther-img{
+            text-align: center;
+            margin-bottom: -20px;
+            position: relative;
+            z-index: 10;
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 6px solid #15141a;
+            }
+        }
+        .main-img{
+            height: 220px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .sub-imgs{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            img{
+                width: 32%;
+                height: 80px;
+                border-radius: 6px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+

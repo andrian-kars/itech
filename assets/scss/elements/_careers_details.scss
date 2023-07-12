@@ -1,0 +1,219 @@
+
+
+
+/* --------------- career-details-page style-5 --------------- */
+.career-details-page.style-5{
+    color: #000;
+    p{
+        font-size: 16px;
+        color: #666;
+    }
+    a{
+        font-size: 16px;
+    }
+    h6{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .jop-details{
+        .jop-info{
+            .tags{
+                a{
+                    font-weight: 600;
+                    padding: 6px 15px;
+                    border-radius: 30px;
+                    background-color: #edf5ff;
+                    color: var(--color-blue5);
+                }
+            }
+        }
+    }
+
+    .summary-card{
+        border: 1px solid #9993;
+        border-radius: 5px;
+        padding: 40px;
+        position: sticky;
+        top: 120px;
+        li{
+            font-size: 14px;
+            color: #999;
+            margin: 15px 0;
+            span{
+                color: #000;
+            }
+        }
+    }
+
+    .careers-positions{
+        .position-card{
+            padding: 30px;
+            border: 1px solid #9993;
+            border-radius: 5px;
+            background-color: #fff;
+            display: block;
+            position: relative;
+            h5{
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 16px;
+                color: #666;
+                margin-bottom: 50px;
+            }
+
+            .time{
+                font-size: 16px;
+                color: #000;
+            }
+
+            .trend-mark{
+                position: absolute;
+                width: 36px;
+                height: 60px;
+                line-height: 50px;
+                top: 0;
+                right: 30px;
+                background-color: var(--color-blue5);
+                color: #fff;
+                text-align: center;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    bottom: 0;
+                    width: 36px;
+                    height: 36px;
+                    border-top: 18px solid transparent;
+                    border-right: 18px solid transparent;
+                    border-left: 18px solid transparent;
+                    border-bottom: 18px solid #fff;
+                }
+            }
+        }
+    }
+
+    .careers-positions-slider5{
+        position: relative;
+        .swiper-button-next,
+        .swiper-button-prev{
+            width: 55px;
+            height: 55px;
+            top: 0;
+            border: 1px solid #9993;
+            top: -100px;
+            transition: all 0.3s ease;
+            &:hover{
+                border: 1px solid var(--color-blue5);
+                background: var(--color-blue5);
+            }
+        }
+        .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+            right: 0;
+        }
+
+        .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+            right: 75px;
+            left: auto;
+        }
+    }
+
+    .career-form{
+        position: relative;
+        background-color: var(--color-blue5);
+        color: #fff;
+        p{
+            color: #fff;
+        }
+        .container{
+            position: relative;
+            z-index: 10;
+        }
+        .map_img{
+            position: absolute;
+            left: 0;
+            top: 70px;
+            pointer-events: none;
+            opacity: 0.3;
+            width: 50%;
+        }
+        h2{
+            margin-bottom: 10px;
+            font-size: 44px;
+        }
+        p{
+            font-size: 16px;
+        }
+
+        .mum-card{
+            padding: 20px 0;
+            margin-top: 20px;
+            border-top: 1px solid #fff2;
+            h3{
+                font-size: 50px;
+            }
+            small{
+                font-size: 14px;
+                color: #9dc7f9;
+            }
+        }
+
+        .form{
+            .form-group{
+                position: relative;
+                .icon{
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    color: #fff;
+                }
+                .form-control{
+                    background-color: #fff1;
+                    border-radius: 5px;
+                    min-height: 50px;
+                    border: 0;
+                    font-weight: 300;
+                    color: #fff;
+                    padding-left: 40px;
+                    &::placeholder{
+                        color: #9ecbff;
+                        font-weight: 300;
+                    }
+                    &:focus{
+                        border: 1px solid #fff;
+                        background-color: transparent;
+                    }
+                }
+                textarea.form-control{
+                    padding-top: 10px;
+                }
+    
+                &.upload-card{
+                    text-align: center;
+                    .form-control{
+                        position: relative;
+                        color: #fff3;
+                        background-color: #0002;
+                        padding: 12px;
+                    }
+                    .upload_input{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        z-index: 5;
+                    }
+                }
+            }
+            .btn{
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
